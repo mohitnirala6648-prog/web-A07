@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form action="login.html" method="POST" enctype="multipart/form-data">
+        
+        <p>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </p>
+
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required>
+        </p>
+
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </p>
+
+        <p>
+            <label>Subjects:</label><br>
+            <input type="checkbox" id="sub1" name="subjects" value="html">
+            <label for="sub1">HTML</label><br>
+            <input type="checkbox" id="sub2" name="subjects" value="css">
+            <label for="sub2">CSS</label><br>
+            <input type="checkbox" id="sub3" name="subjects" value="javascript">
+            <label for="sub3">JavaScript</label>
+        </p>
+
+        <p>
+            <label for="file">Upload Profile Picture:</label><br>
+            <input type="file" id="file" name="profile_pic">
+        </p>
+
+        <p>
+            <button type="submit">Register</button>
+        </p>
+    </form>
+</body>
+</html>

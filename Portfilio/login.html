@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Window</title>
+</head>
+<body>
+    <h2>User Login</h2>
+    <form action="about.html" method="POST">
+        <!-- Username with character limits -->
+        <p>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" minlength="4" maxlength="15" placeholder="4-15 characters" required>
+        </p>
+
+        <!-- Password with limits and a Tooltip condition via the 'title' attribute -->
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" minlength="8" maxlength="20" 
+                   title="Password must be between 8 and 20 characters long and contain at least one number." required>
+        </p>
+
+        <!-- Login Button -->
+        <p>
+            <button type="submit">Login</button>
+        </p>
+    </form>
+</body>
+</html>
