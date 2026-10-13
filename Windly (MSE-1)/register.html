@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Windly</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="registration-page">
+
+    <header>
+        <div class="logo-area">
+            <img src="image@.png"
+                 alt="Windly Logo"
+                 class="brand-logo-img">
+
+            <a href="index.html" class="logo">
+                Wind<span>ly</span>
+            </a>
+        </div>
+
+        <a href="index.html" class="login-link">
+            Back to Home
+        </a>
+    </header>
+
+    <main class="registration-main">
+
+        <div class="register-card">
+
+            <h1>Create Account</h1>
+
+            <p class="register-subtitle">
+                Join Windly and get your daily essentials delivered fast!
+            </p>
+
+            <form class="register-form" id="registerForm">
+
+                <label for="fullname">Full Name</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your 10-digit mobile number"
+                    pattern="[6-9][0-9]{9}"
+                    title="Enter a valid 10-digit Indian mobile number"
+                    autocomplete="tel"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Re-enter your password"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <button type="submit" class="register-btn">
+                    Register Now
+                </button>
+
+                <p
+                    class="form-message"
+                    id="formMessage"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+            <p class="login-prompt">
+                Already have an account?
+                <a href="index.html">Go to Home</a>
+            </p>
+
+            <a href="index.html" class="back-home">
+                ← Return to Windly
+            </a>
+
+        </div>
+
+    </main>
+
+    <script>
+        const registerForm =
+            document.getElementById("registerForm");
+
+        const password =
+            document.getElementById("password");
+
+        const confirmPassword =
+            document.getElementById("confirmPassword");
+
+        const formMessage =
+            document.getElementById("formMessage");
+
+        registerForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (password.value !== confirmPassword.value) {
+                formMessage.textContent =
+                    "Passwords do not match. Please try again.";
+
+                formMessage.style.color = "#d32f2f";
+                confirmPassword.focus();
+                return;
+            }
+
+            formMessage.textContent =
+                "Registration form validated successfully! " +
+                "This is a demo; no account has been created.";
+
+            formMessage.style.color = "#0c831f";
+        });
+    </script>
+
+</body>
+</html>

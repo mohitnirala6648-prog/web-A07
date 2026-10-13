@@ -8,82 +8,272 @@
 </head>
 <body>
 
+    
     <header>
         <div class="logo-area">
-            <img src="image@.png" alt="Windly Logo" class="brand-logo-img">
-            <div class="logo">Wind<span>ly</span></div>
+            <img src="image@.png"
+                 alt="Windly Logo"
+                 class="brand-logo-img">
+
+            <a href="index.html" class="logo">
+                Wind<span>ly</span>
+            </a>
+
             <div class="delivery-info">
                 <h4>Delivery in 9 minutes</h4>
                 <p>KIET, Ghaziabad</p>
             </div>
         </div>
-        
+
         <div class="search-bar">
             <span>🔍</span>
-            <input type="text" placeholder="Search 'chocolate', 'milk', 'curd'...">
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search groceries, snacks, milk...">
         </div>
 
-            <span>Login</span>
-            <div class="cart-btn">
-                <span>🛒</span> My Cart
-            </div>
+        <div class="user-actions">
+            <a href="register.html" class="login-link">Login / Register</a>
+
+            <a href="#categories" class="cart-btn">
+                🛒 My Cart
+            </a>
         </div>
     </header>
 
     <section class="hero">
+        <p class="hero-tag">FAST • FRESH • RELIABLE</p>
         <h1>India's last minute app - Windly</h1>
-        <p>Get groceries, snacks, and essentials delivered in lightning speed.</p>
-        <button class="download-btn">Get the Windly App</button>
+        <p>
+            Get groceries, snacks, and daily essentials
+            delivered in lightning speed.
+        </p>
+        <a href="#categories" class="download-btn">
+            Explore Products
+        </a>
     </section>
 
-    <div class="container">
+    <main class="container" id="categories">
         <h2 class="section-title">Grocery & Kitchen</h2>
+
         <div class="categories-grid">
-            
+
             <div class="category-card">
                 <div class="category-img-box">
-                    <img src="image1.png" alt="Vegetables & Fruits">
+                    <img src="image1.png"
+                         alt="Vegetables and Fruits">
                 </div>
                 <p>Vegetables & Fruits</p>
             </div>
 
             <div class="category-card">
                 <div class="category-img-box">
-                    <img src="image2.png" alt="Atta, Rice & Dal">
+                    <img src="image2.png"
+                         alt="Atta, Rice and Dal">
                 </div>
                 <p>Atta, Rice & Dal</p>
             </div>
 
             <div class="category-card">
                 <div class="category-img-box">
-                    <img src="image3.png" alt="Dairy, Bread & Eggs">
+                    <img src="image3.png"
+                         alt="Dairy, Bread and Eggs">
                 </div>
                 <p>Dairy, Bread & Eggs</p>
             </div>
 
             <div class="category-card">
                 <div class="category-img-box">
-                    <img src="image4.png" alt="Snacks & Drinks">
+                    <img src="image4.png"
+                         alt="Snacks and Drinks">
                 </div>
                 <p>Snacks & Drinks</p>
             </div>
 
             <div class="category-card">
                 <div class="category-img-box">
-                    <img src="image5.png" alt="Household Essentials">
+                    <img src="image5.png"
+                         alt="Household Essentials">
                 </div>
                 <p>Household Essentials</p>
             </div>
 
             <div class="category-card">
                 <div class="category-img-box">
-                    <img src="image6.png" alt="Sweets & Chocolates">
+                    <img src="image6.png"
+                         alt="Sweets and Chocolates">
                 </div>
                 <p>Sweets & Chocolates</p>
             </div>
 
+            <!-- Additional Categories -->
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image7.png"
+                         alt="Personal Care">
+                </div>
+                <p>Personal Care</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image8.png"
+                         alt="Bakery Products">
+                </div>
+                <p>Bakery & Cakes</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image9.png"
+                         alt="Frozen Food">
+                </div>
+                <p>Frozen Food</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image10.png"
+                         alt="Baby Care">
+                </div>
+                <p>Baby Care</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image11.png"
+                         alt="Cleaning Supplies">
+                </div>
+                <p>Cleaning Supplies</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image12.png"
+                         alt="Pet Care">
+                </div>
+                <p>Pet Care</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image13.png"
+                         alt="Beverages">
+                </div>
+                <p>Juices & Beverages</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image14.png"
+                         alt="Spices and Masalas">
+                </div>
+                <p>Masalas & Spices</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image15.png"
+                         alt="Instant Food">
+                </div>
+                <p>Instant Food</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-img-box">
+                    <img src="image16.png"
+                         alt="Home Utilities">
+                </div>
+                <p>Home Utilities</p>
+            </div>
+
         </div>
-    </div>
+    </main>
+
+    <section class="about-section">
+        <h2>Why Choose Windly?</h2>
+        <div class="features">
+            <div class="feature">
+                <span>⚡</span>
+                <h3>Quick Delivery</h3>
+                <p>Your daily essentials at your doorstep.</p>
+            </div>
+
+            <div class="feature">
+                <span>🥬</span>
+                <h3>Fresh Products</h3>
+                <p>Fresh groceries for your everyday needs.</p>
+            </div>
+
+            <div class="feature">
+                <span>💚</span>
+                <h3>Easy Shopping</h3>
+                <p>A simple way to shop for daily essentials.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+
+            <div class="footer-about">
+                <h2 class="footer-logo">Wind<span>ly</span></h2>
+                <p>
+                    Your neighbourhood grocery delivery app.
+                    Shop daily essentials quickly and easily.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="register.html">Register</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+            <div class="footer-column" id="contact">
+                <h3>Contact Us</h3>
+                <p>📍 KIET, Ghaziabad, Uttar Pradesh</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉ support@windly.example</p>
+                <p>🕒 Mon–Sun: 8 AM – 10 PM</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Customer Support</h3>
+                <a href="mailto:support@windly.example">Help Centre</a>
+                <a href="mailto:support@windly.example">Report an Issue</a>
+                <a href="mailto:support@windly.example">Feedback</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Windly. All rights reserved.
+                | Demo website for educational purposes.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        const categoryCards = document.querySelectorAll(".category-card");
+
+        searchInput.addEventListener("input", function () {
+            const searchText = this.value.toLowerCase().trim();
+
+            categoryCards.forEach(function (card) {
+                const categoryName =
+                    card.querySelector("p").textContent.toLowerCase();
+
+                card.style.display =
+                    categoryName.includes(searchText) ? "" : "none";
+            });
+        });
+    </script>
 
 </body>
 </html>
